@@ -276,6 +276,7 @@ namespace Calculator
             buttonFloat.TabIndex = 23;
             buttonFloat.Text = ".";
             buttonFloat.UseVisualStyleBackColor = true;
+            buttonFloat.Click += buttonFloat_Click;
             // 
             // buttonMinus
             // 

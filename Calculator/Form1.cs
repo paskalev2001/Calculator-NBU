@@ -203,5 +203,16 @@ namespace Calculator
             currentInput = "";
             operationPending = true;
         }
+
+        private void buttonFloat_Click(object sender, EventArgs e)
+        {
+            if (!currentInput.Contains("."))
+            {
+                if (string.IsNullOrEmpty(currentInput))
+                    currentInput = "0";
+                currentInput += ".";
+                textBox1.Text = currentInput;
+            }
+        }
     }
 }
