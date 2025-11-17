@@ -328,8 +328,10 @@ namespace Calculator
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(textBox1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
             Name = "Form1";
-            Text = "Form1";
+            Text = "Calculator";
             ResumeLayout(false);
             PerformLayout();
         }
