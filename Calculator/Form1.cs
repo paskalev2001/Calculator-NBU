@@ -65,7 +65,7 @@ namespace Calculator
                     case "pow":
                         result = Math.Pow(result, secondNumber);
                         break;
-                    
+
                     case "fib":
                         if (secondNumber < 0 || secondNumber != Math.Floor(secondNumber))
                         {
@@ -75,6 +75,43 @@ namespace Calculator
                             return;
                         }
                         result = Fibonacci((int)secondNumber);
+                        break;
+
+                    case "log":
+                        if (secondNumber <= 0)
+                        {
+                            textBox1.Text = "Input must be > 0";
+                            currentInput = "";
+                            operationPending = false;
+                            return;
+                        }
+                        result = Math.Log(secondNumber);
+                        break;
+
+                    case "sqrt":
+                        if (secondNumber < 0)
+                        {
+                            textBox1.Text = "Input must be non-negative";
+                            currentInput = "";
+                            operationPending = false;
+                            return;
+                        }
+                        result = Math.Sqrt(secondNumber);
+                        break;
+
+                    case "abs":
+                        result = Math.Abs(secondNumber);
+                        break;
+
+                    case "rec":
+                        if (secondNumber == 0)
+                        {
+                            textBox1.Text = "Cannot divide by zero";
+                            currentInput = "";
+                            operationPending = false;
+                            return;
+                        }
+                        result = 1 / secondNumber;
                         break;
 
                     default:
@@ -228,11 +265,17 @@ namespace Calculator
             if (string.IsNullOrEmpty(currentInput))
                 return;
 
+            if (!double.TryParse(currentInput, out result))
+            {
+                MessageBox.Show("Invalid input. Please enter a valid number.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                currentInput = "";
+                return;
+            }
+
             if (operationPending)
                 Evaluate();
 
             operation = op;
-            result = double.Parse(currentInput);
             currentInput = "";
             operationPending = true;
         }
@@ -258,6 +301,14 @@ namespace Calculator
         private void buttonFib_Click(object sender, EventArgs e) => SetOperation("fib");
 
         private void buttonPower_Click(object sender, EventArgs e) => SetOperation("pow");
+
+        private void buttonLog_Click(object sender, EventArgs e) => SetOperation("log");
+
+        private void buttonRootTwo_Click(object sender, EventArgs e) => SetOperation("sqrt");
+
+        private void buttonAbsolute_Click(object sender, EventArgs e) => SetOperation("abs");
+
+        private void buttonReciprocal_Click(object sender, EventArgs e) => SetOperation("rec");
 
     }
 }

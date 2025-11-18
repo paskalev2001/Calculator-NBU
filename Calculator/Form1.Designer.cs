@@ -203,6 +203,7 @@ namespace Calculator
             buttonRootTwo.TabIndex = 14;
             buttonRootTwo.Text = "2√x";
             buttonRootTwo.UseVisualStyleBackColor = true;
+            buttonRootTwo.Click += buttonRootTwo_Click;
             // 
             // buttonPower
             // 
@@ -222,6 +223,7 @@ namespace Calculator
             buttonAbsolute.TabIndex = 18;
             buttonAbsolute.Text = "|x|";
             buttonAbsolute.UseVisualStyleBackColor = true;
+            buttonAbsolute.Click += buttonAbsolute_Click;
             // 
             // buttonReciprocal
             // 
@@ -231,6 +233,7 @@ namespace Calculator
             buttonReciprocal.TabIndex = 17;
             buttonReciprocal.Text = "1/x";
             buttonReciprocal.UseVisualStyleBackColor = true;
+            buttonReciprocal.Click += buttonReciprocal_Click;
             // 
             // buttonPi
             // 
@@ -270,6 +273,7 @@ namespace Calculator
             buttonLog.TabIndex = 24;
             buttonLog.Text = "log";
             buttonLog.UseVisualStyleBackColor = true;
+            buttonLog.Click += buttonLog_Click;
             // 
             // buttonFloat
             // 
