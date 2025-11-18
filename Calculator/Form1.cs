@@ -7,6 +7,21 @@ namespace Calculator
         string operation = "";
         bool operationPending = false;
 
+        private static double Fibonacci(int n)
+        {
+            if (n < 0) throw new ArgumentException("Input must be non-negative.");
+            if (n == 0) return 0;
+            if (n == 1) return 1;
+
+            double a = 0, b = 1;
+            for (int i = 2; i <= n; i++)
+            {
+                double temp = a + b;
+                a = b;
+                b = temp;
+            }
+            return b;
+        }
         private void Evaluate()
         {
             if (operationPending)
@@ -47,6 +62,24 @@ namespace Calculator
                             return;
                         }
                         break;
+                    case "pow":
+                        result = Math.Pow(result, secondNumber);
+                        break;
+                    
+                    case "fib":
+                        if (secondNumber < 0 || secondNumber != Math.Floor(secondNumber))
+                        {
+                            textBox1.Text = "Input must be a non-negative integer";
+                            currentInput = "";
+                            operationPending = false;
+                            return;
+                        }
+                        result = Fibonacci((int)secondNumber);
+                        break;
+
+                    default:
+                        textBox1.Text = "No such operation";
+                        return;
                 }
                 textBox1.Text = result.ToString();
                 currentInput = "";
@@ -214,5 +247,17 @@ namespace Calculator
                 textBox1.Text = currentInput;
             }
         }
+
+        private void buttonPi_Click(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+            currentInput += Math.PI;
+            textBox1.Text = currentInput;
+        }
+
+        private void buttonFib_Click(object sender, EventArgs e) => SetOperation("fib");
+
+        private void buttonPower_Click(object sender, EventArgs e) => SetOperation("pow");
+
     }
 }

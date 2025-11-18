@@ -193,6 +193,7 @@ namespace Calculator
             buttonFib.TabIndex = 15;
             buttonFib.Text = "n!";
             buttonFib.UseVisualStyleBackColor = true;
+            buttonFib.Click += buttonFib_Click;
             // 
             // buttonRootTwo
             // 
@@ -211,6 +212,7 @@ namespace Calculator
             buttonPower.TabIndex = 13;
             buttonPower.Text = "^";
             buttonPower.UseVisualStyleBackColor = true;
+            buttonPower.Click += buttonPower_Click;
             // 
             // buttonAbsolute
             // 
@@ -238,6 +240,7 @@ namespace Calculator
             buttonPi.TabIndex = 16;
             buttonPi.Text = "π";
             buttonPi.UseVisualStyleBackColor = true;
+            buttonPi.Click += buttonPi_Click;
             // 
             // buttonMultiplication
             // 
