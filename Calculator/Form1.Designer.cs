@@ -63,7 +63,6 @@ namespace Calculator
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(318, 58);
             textBox1.TabIndex = 0;
-            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // button1
             // 

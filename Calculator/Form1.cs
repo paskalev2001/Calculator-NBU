@@ -15,6 +15,7 @@
 
         private static double Fibonacci(int n)
         {
+            // Тази функция изчислява фибоначи
             if (n < 0) throw new ArgumentException("Input must be non-negative.");
             if (n == 0) return 0;
             if (n == 1) return 1;
@@ -30,6 +31,7 @@
         }
         private void Evaluate()
         {
+            // При натискане на бутона = или при унарни операции тази функция се извиква
             if (operationPending)
             {
                 if (string.IsNullOrEmpty(currentInput))
@@ -135,10 +137,7 @@
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -217,7 +216,18 @@
 
         private void buttonPlus_Click(object sender, EventArgs e) => SetOperation("+");
 
-        private void buttonMinus_Click(object sender, EventArgs e) => SetOperation("-");
+        private void buttonMinus_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(currentInput))
+            {
+                currentInput = "-";
+                textBox1.Text = currentInput;
+            }
+            else
+            {
+                SetOperation("-");
+            }
+        }
 
         private void buttonDiv_Click(object sender, EventArgs e) => SetOperation("/");
 
