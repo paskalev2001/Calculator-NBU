@@ -1,7 +1,13 @@
-namespace Calculator
+﻿namespace Calculator
 {
     public partial class Form1 : Form
     {
+        /* При инициализация на формата се дефинират променливи за:
+         * текущо число въведено от потребителя
+         * Първото число при двуоперандови оперзции
+         * операцията чакаща изпълнението
+         * флаг казващ дали операцията чака втори аргумент
+         */
         string currentInput = "";
         double result = 0;
         string operation = "";
@@ -266,6 +272,16 @@ namespace Calculator
             if (string.IsNullOrEmpty(currentInput))
                 return;
 
+            // Унарни операции
+            if (op == "sqrt" || op == "abs" || op == "log" || op == "fib" || op == "rec")
+            {
+                operation = op;
+                operationPending = true;
+                Evaluate();
+                return;
+            }
+
+            // Бинарни операции
             if (!double.TryParse(currentInput, out result))
             {
                 MessageBox.Show("Invalid input. Please enter a valid number.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
