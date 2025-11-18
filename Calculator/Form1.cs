@@ -102,6 +102,7 @@ namespace Calculator
                     case "abs":
                         result = Math.Abs(secondNumber);
                         break;
+                    
 
                     case "rec":
                         if (secondNumber == 0)
@@ -293,8 +294,7 @@ namespace Calculator
 
         private void buttonPi_Click(object sender, EventArgs e)
         {
-            Button button = (Button)sender;
-            currentInput += Math.PI;
+            currentInput = Math.PI.ToString();
             textBox1.Text = currentInput;
         }
 
