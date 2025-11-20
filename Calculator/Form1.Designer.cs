@@ -41,7 +41,7 @@ namespace Calculator
             button7 = new Button();
             buttonEquals = new Button();
             button0 = new Button();
-            button12 = new Button();
+            buttonClear = new Button();
             buttonFib = new Button();
             buttonRootTwo = new Button();
             buttonPower = new Button();
@@ -174,15 +174,15 @@ namespace Calculator
             button0.UseVisualStyleBackColor = true;
             button0.Click += button0_Click;
             // 
-            // button12
+            // buttonClear
             // 
-            button12.Location = new Point(4, 214);
-            button12.Name = "button12";
-            button12.Size = new Size(75, 23);
-            button12.TabIndex = 10;
-            button12.Text = "Clear";
-            button12.UseVisualStyleBackColor = true;
-            button12.Click += button12_Click;
+            buttonClear.Location = new Point(4, 214);
+            buttonClear.Name = "buttonClear";
+            buttonClear.Size = new Size(75, 23);
+            buttonClear.TabIndex = 10;
+            buttonClear.Text = "Clear";
+            buttonClear.UseVisualStyleBackColor = true;
+            buttonClear.Click += buttonClear_Click;
             // 
             // buttonFib
             // 
@@ -323,7 +323,7 @@ namespace Calculator
             Controls.Add(buttonPower);
             Controls.Add(buttonEquals);
             Controls.Add(button0);
-            Controls.Add(button12);
+            Controls.Add(buttonClear);
             Controls.Add(button9);
             Controls.Add(button8);
             Controls.Add(button7);
@@ -358,7 +358,7 @@ namespace Calculator
         private Button button7;
         private Button buttonEquals;
         private Button button0;
-        private Button button12;
+        private Button buttonClear;
         private Button buttonFib;
         private Button buttonRootTwo;
         private Button buttonPower;
