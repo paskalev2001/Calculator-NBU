@@ -11,14 +11,8 @@ namespace Calculator
         public Form1()
         {
             InitializeComponent();
-
-            //  Optionally: in designer, hook all number buttons to NumberButton_Click
-            //  button0.Click += NumberButton_Click;
-            //  button1.Click += NumberButton_Click;
-            //  ...
         }
 
-        //  Common handler for digit buttons (0–9)
         private void NumberButton_Click(object sender, EventArgs e)
         {
             var button = (Button)sender;
@@ -93,7 +87,6 @@ namespace Calculator
         {
             try
             {
-                //  Special case for negative sign input, like your original code
                 if (symbol == "-" && string.IsNullOrEmpty(_engine.CurrentInput) && !_engine.OperationPending)
                 {
                     _engine.AppendInput("-");
@@ -112,6 +105,7 @@ namespace Calculator
             }
         }
 
+        // Calling button events
         private void buttonPlus_Click(object sender, EventArgs e) => HandleOperation("+");
         private void buttonMinus_Click(object sender, EventArgs e) => HandleOperation("-");
         private void buttonDiv_Click(object sender, EventArgs e) => HandleOperation("/");
