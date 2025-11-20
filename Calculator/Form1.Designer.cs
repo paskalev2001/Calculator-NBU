@@ -3,15 +3,15 @@ namespace Calculator
 {
     partial class Form1
     {
-        /// <summary>
-        ///  Required designer variable.
-        /// </summary>
+        // / <summary>
+        // /  Required designer variable.
+        // / </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        ///  Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        // / <summary>
+        // /  Clean up any resources being used.
+        // / </summary>
+        // / <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -23,10 +23,10 @@ namespace Calculator
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
-        /// </summary>
+        // / <summary>
+        // /  Required method for Designer support - do not modify
+        // /  the contents of this method with the code editor.
+        // / </summary>
         private void InitializeComponent()
         {
             textBox1 = new TextBox();
@@ -55,17 +55,17 @@ namespace Calculator
             buttonMinus = new Button();
             buttonPlus = new Button();
             SuspendLayout();
-            // 
-            // textBox1
-            // 
+            //  
+            //  textBox1
+            //  
             textBox1.Location = new Point(4, 5);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(318, 58);
             textBox1.TabIndex = 0;
-            // 
-            // button1
-            // 
+            //  
+            //  button1
+            //  
             button1.Location = new Point(4, 69);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
@@ -73,9 +73,9 @@ namespace Calculator
             button1.Text = "1";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
-            // 
-            // button2
-            // 
+            //  
+            //  button2
+            //  
             button2.Location = new Point(85, 69);
             button2.Name = "button2";
             button2.Size = new Size(75, 23);
@@ -83,9 +83,9 @@ namespace Calculator
             button2.Text = "2";
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
-            // 
-            // button3
-            // 
+            //  
+            //  button3
+            //  
             button3.Location = new Point(166, 69);
             button3.Name = "button3";
             button3.Size = new Size(75, 23);
@@ -93,9 +93,9 @@ namespace Calculator
             button3.Text = "3";
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
-            // 
-            // button6
-            // 
+            //  
+            //  button6
+            //  
             button6.Location = new Point(166, 98);
             button6.Name = "button6";
             button6.Size = new Size(75, 23);
@@ -103,9 +103,9 @@ namespace Calculator
             button6.Text = "6";
             button6.UseVisualStyleBackColor = true;
             button6.Click += button6_Click;
-            // 
-            // button5
-            // 
+            //  
+            //  button5
+            //  
             button5.Location = new Point(85, 98);
             button5.Name = "button5";
             button5.Size = new Size(75, 23);
@@ -113,9 +113,9 @@ namespace Calculator
             button5.Text = "5";
             button5.UseVisualStyleBackColor = true;
             button5.Click += button5_Click;
-            // 
-            // button4
-            // 
+            //  
+            //  button4
+            //  
             button4.Location = new Point(4, 98);
             button4.Name = "button4";
             button4.Size = new Size(75, 23);
@@ -123,9 +123,9 @@ namespace Calculator
             button4.Text = "4";
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
-            // 
-            // button9
-            // 
+            //  
+            //  button9
+            //  
             button9.Location = new Point(166, 127);
             button9.Name = "button9";
             button9.Size = new Size(75, 23);
@@ -133,9 +133,9 @@ namespace Calculator
             button9.Text = "9";
             button9.UseVisualStyleBackColor = true;
             button9.Click += button9_Click;
-            // 
-            // button8
-            // 
+            //  
+            //  button8
+            //  
             button8.Location = new Point(85, 127);
             button8.Name = "button8";
             button8.Size = new Size(75, 23);
@@ -143,9 +143,9 @@ namespace Calculator
             button8.Text = "8";
             button8.UseVisualStyleBackColor = true;
             button8.Click += button8_Click;
-            // 
-            // button7
-            // 
+            //  
+            //  button7
+            //  
             button7.Location = new Point(4, 127);
             button7.Name = "button7";
             button7.Size = new Size(75, 23);
@@ -153,9 +153,9 @@ namespace Calculator
             button7.Text = "7";
             button7.UseVisualStyleBackColor = true;
             button7.Click += button7_Click;
-            // 
-            // buttonEquals
-            // 
+            //  
+            //  buttonEquals
+            //  
             buttonEquals.Location = new Point(166, 156);
             buttonEquals.Name = "buttonEquals";
             buttonEquals.Size = new Size(75, 23);
@@ -163,9 +163,9 @@ namespace Calculator
             buttonEquals.Text = "=";
             buttonEquals.UseVisualStyleBackColor = true;
             buttonEquals.Click += buttonEquals_Click;
-            // 
-            // button0
-            // 
+            //  
+            //  button0
+            //  
             button0.Location = new Point(85, 156);
             button0.Name = "button0";
             button0.Size = new Size(75, 23);
@@ -173,9 +173,9 @@ namespace Calculator
             button0.Text = "0";
             button0.UseVisualStyleBackColor = true;
             button0.Click += button0_Click;
-            // 
-            // buttonClear
-            // 
+            //  
+            //  buttonClear
+            //  
             buttonClear.Location = new Point(4, 214);
             buttonClear.Name = "buttonClear";
             buttonClear.Size = new Size(75, 23);
@@ -183,9 +183,9 @@ namespace Calculator
             buttonClear.Text = "Clear";
             buttonClear.UseVisualStyleBackColor = true;
             buttonClear.Click += buttonClear_Click;
-            // 
-            // buttonFib
-            // 
+            //  
+            //  buttonFib
+            //  
             buttonFib.Location = new Point(166, 185);
             buttonFib.Name = "buttonFib";
             buttonFib.Size = new Size(75, 23);
@@ -193,9 +193,9 @@ namespace Calculator
             buttonFib.Text = "n!";
             buttonFib.UseVisualStyleBackColor = true;
             buttonFib.Click += buttonFib_Click;
-            // 
-            // buttonRootTwo
-            // 
+            //  
+            //  buttonRootTwo
+            //  
             buttonRootTwo.Location = new Point(247, 214);
             buttonRootTwo.Name = "buttonRootTwo";
             buttonRootTwo.Size = new Size(75, 23);
@@ -203,9 +203,9 @@ namespace Calculator
             buttonRootTwo.Text = "2√x";
             buttonRootTwo.UseVisualStyleBackColor = true;
             buttonRootTwo.Click += buttonRootTwo_Click;
-            // 
-            // buttonPower
-            // 
+            //  
+            //  buttonPower
+            //  
             buttonPower.Location = new Point(247, 185);
             buttonPower.Name = "buttonPower";
             buttonPower.Size = new Size(75, 23);
@@ -213,9 +213,9 @@ namespace Calculator
             buttonPower.Text = "^";
             buttonPower.UseVisualStyleBackColor = true;
             buttonPower.Click += buttonPower_Click;
-            // 
-            // buttonAbsolute
-            // 
+            //  
+            //  buttonAbsolute
+            //  
             buttonAbsolute.Location = new Point(166, 214);
             buttonAbsolute.Name = "buttonAbsolute";
             buttonAbsolute.Size = new Size(75, 23);
@@ -223,9 +223,9 @@ namespace Calculator
             buttonAbsolute.Text = "|x|";
             buttonAbsolute.UseVisualStyleBackColor = true;
             buttonAbsolute.Click += buttonAbsolute_Click;
-            // 
-            // buttonReciprocal
-            // 
+            //  
+            //  buttonReciprocal
+            //  
             buttonReciprocal.Location = new Point(85, 214);
             buttonReciprocal.Name = "buttonReciprocal";
             buttonReciprocal.Size = new Size(75, 23);
@@ -233,9 +233,9 @@ namespace Calculator
             buttonReciprocal.Text = "1/x";
             buttonReciprocal.UseVisualStyleBackColor = true;
             buttonReciprocal.Click += buttonReciprocal_Click;
-            // 
-            // buttonPi
-            // 
+            //  
+            //  buttonPi
+            //  
             buttonPi.Location = new Point(4, 185);
             buttonPi.Name = "buttonPi";
             buttonPi.Size = new Size(75, 23);
@@ -243,9 +243,9 @@ namespace Calculator
             buttonPi.Text = "π";
             buttonPi.UseVisualStyleBackColor = true;
             buttonPi.Click += buttonPi_Click;
-            // 
-            // buttonMultiplication
-            // 
+            //  
+            //  buttonMultiplication
+            //  
             buttonMultiplication.Location = new Point(247, 69);
             buttonMultiplication.Name = "buttonMultiplication";
             buttonMultiplication.Size = new Size(75, 23);
@@ -253,9 +253,9 @@ namespace Calculator
             buttonMultiplication.Text = "*";
             buttonMultiplication.UseVisualStyleBackColor = true;
             buttonMultiplication.Click += buttonMultiplication_Click;
-            // 
-            // buttonDiv
-            // 
+            //  
+            //  buttonDiv
+            //  
             buttonDiv.Location = new Point(247, 98);
             buttonDiv.Name = "buttonDiv";
             buttonDiv.Size = new Size(75, 23);
@@ -263,9 +263,9 @@ namespace Calculator
             buttonDiv.Text = "/";
             buttonDiv.UseVisualStyleBackColor = true;
             buttonDiv.Click += buttonDiv_Click;
-            // 
-            // buttonLog
-            // 
+            //  
+            //  buttonLog
+            //  
             buttonLog.Location = new Point(85, 185);
             buttonLog.Name = "buttonLog";
             buttonLog.Size = new Size(75, 23);
@@ -273,9 +273,9 @@ namespace Calculator
             buttonLog.Text = "log";
             buttonLog.UseVisualStyleBackColor = true;
             buttonLog.Click += buttonLog_Click;
-            // 
-            // buttonFloat
-            // 
+            //  
+            //  buttonFloat
+            //  
             buttonFloat.Location = new Point(4, 156);
             buttonFloat.Name = "buttonFloat";
             buttonFloat.Size = new Size(75, 23);
@@ -283,9 +283,9 @@ namespace Calculator
             buttonFloat.Text = ".";
             buttonFloat.UseVisualStyleBackColor = true;
             buttonFloat.Click += buttonFloat_Click;
-            // 
-            // buttonMinus
-            // 
+            //  
+            //  buttonMinus
+            //  
             buttonMinus.Location = new Point(247, 156);
             buttonMinus.Name = "buttonMinus";
             buttonMinus.Size = new Size(75, 23);
@@ -293,9 +293,9 @@ namespace Calculator
             buttonMinus.Text = "-";
             buttonMinus.UseVisualStyleBackColor = true;
             buttonMinus.Click += buttonMinus_Click;
-            // 
-            // buttonPlus
-            // 
+            //  
+            //  buttonPlus
+            //  
             buttonPlus.Location = new Point(247, 127);
             buttonPlus.Name = "buttonPlus";
             buttonPlus.Size = new Size(75, 23);
@@ -303,9 +303,9 @@ namespace Calculator
             buttonPlus.Text = "+";
             buttonPlus.UseVisualStyleBackColor = true;
             buttonPlus.Click += buttonPlus_Click;
-            // 
-            // Form1
-            // 
+            //  
+            //  Form1
+            //  
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(327, 243);

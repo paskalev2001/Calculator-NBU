@@ -12,13 +12,13 @@ namespace Calculator
         {
             InitializeComponent();
 
-            // Optionally: in designer, hook all number buttons to NumberButton_Click
-            // button0.Click += NumberButton_Click;
-            // button1.Click += NumberButton_Click;
-            // ...
+            //  Optionally: in designer, hook all number buttons to NumberButton_Click
+            //  button0.Click += NumberButton_Click;
+            //  button1.Click += NumberButton_Click;
+            //  ...
         }
 
-        // Common handler for digit buttons (0–9)
+        //  Common handler for digit buttons (0–9)
         private void NumberButton_Click(object sender, EventArgs e)
         {
             var button = (Button)sender;
@@ -37,7 +37,7 @@ namespace Calculator
         private void button8_Click(object sender, EventArgs e) => NumberButton_Click(sender, e);
         private void button9_Click(object sender, EventArgs e) => NumberButton_Click(sender, e);
 
-        // Decimal / float button
+        //  Decimal / float button
         private void buttonDecimal_Click(object sender, EventArgs e)
         {
             _engine.InsertDecimal();
@@ -81,19 +81,19 @@ namespace Calculator
                 _engine.Evaluate();
                 textBox1.Text = _engine.GetDisplayText();
             }
-            catch (CalculatorException ex)
+            catch (Exception ex)
             {
                 textBox1.Text = ex.Message;
                 _engine.Clear();
             }
         }
 
-        // Helper for binary/unary operations
+        //  Helper for binary/unary operations
         private void HandleOperation(string symbol)
         {
             try
             {
-                // Special case for negative sign input, like your original code
+                //  Special case for negative sign input, like your original code
                 if (symbol == "-" && string.IsNullOrEmpty(_engine.CurrentInput) && !_engine.OperationPending)
                 {
                     _engine.AppendInput("-");
@@ -105,7 +105,7 @@ namespace Calculator
 
                 textBox1.Text = _engine.GetDisplayText();
             }
-            catch (CalculatorException ex)
+            catch (Exception ex)
             {
                 textBox1.Text = ex.Message;
                 _engine.Clear();
